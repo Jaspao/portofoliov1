@@ -1,0 +1,23 @@
+:root {
+  /* COLOR: change --hue and the whole accent recolors */
+  --hue: 184;
+  --accent: hsl(var(--hue) 100% 50%);
+  --accent-glow: hsl(var(--hue) 100% 50% / 0.55);
+
+  --bg: #1f242d;
+  --bg-alt: #323946;
+  --text: #ededed;
+  --text-muted: #b4bac4;
+  --on-accent: #1f242d;
+
+  /* TYPE AND LAYOUT */
+  --font: "Poppins", sans-serif;
+  --header-h: 72px;
+  --container: 1100px;
+  --radius: 16px;
+
+  /* PHOTO SIZE AND SHAPE */
+  --photo-size: 380px;
+  --photo-border: 8px;
+  --photo-shape: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
