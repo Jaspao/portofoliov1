@@ -1,0 +1,17 @@
+.socials { display: flex; gap: 1rem; list-style: none; }
+
+.socials a {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.socials a:hover {
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: 0 0 16px var(--accent-glow);
+}
