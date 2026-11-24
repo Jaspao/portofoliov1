@@ -8,3 +8,15 @@
   background-position: center;  /* which part of the photo stays visible */
   background-repeat: no-repeat;
 }
+.about__box {
+  max-width: 640px;
+  padding: 2rem 2.5rem;
+  background: hsl(var(--hue) 70% 20% / 0.65);        /* dark red, 65% opaque */
+  border: 1px solid hsl(var(--hue) 70% 60% / 0.4);   /* faint lighter edge */
+  border-radius: var(--radius);
+  backdrop-filter: blur(6px);                        /* softly blurs the photo behind the box */
+
+  color: #ffffff;                                    /* white text on the dark box */
+  --text-muted: rgb(255 255 255 / 0.85);
+}
+.about__box .accent { color: var(--gold); }
