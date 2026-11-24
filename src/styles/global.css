@@ -26,3 +26,8 @@ img { max-width: 100%; display: block; }
 }
 
 .accent { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

@@ -19,4 +19,8 @@
   --photo-size: 380px;
   --photo-border: 8px;
   --photo-shape: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+  --gold: #fbe122;
+  --gold-glow: rgb(251 225 34 / 0.5);
+  --on-gold: #1a1a1a;
 }

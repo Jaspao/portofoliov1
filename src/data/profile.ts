@@ -5,15 +5,14 @@ export const profile: Profile = {
   greeting: "Hello! My name is",
   name: "Jason Sebastian",
   rolePrefix: "And I'm a",
-  role: "Pro Larper",
-  bio: "trigus trigus trigus",
+  role: "Cybersecurity Student",
+  bio: "18 | ♟️ | ⚽ | 💻",
   photo: "/profile.png",
   cv: "/cv.pdf",
   email: "you@example.com",
   socials: [
     { label: "GitHub", href: "https://github.com/Jaspao", icon: "github" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/your-username", icon: "linkedin" },
-    { label: "Instagram", href: "https://instagram.com/your-username", icon: "instagram" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/jason-sebastian-235368443/", icon: "linkedin" },
   ],
   about: [
     "Cybersecurity Student @ APU",
