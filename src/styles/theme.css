@@ -1,9 +1,9 @@
 :root {
   /* COLOR: change --hue and the whole accent recolors */
-  --hue: 270;
-  --accent: hsl(var(--hue) 100% 50%);
-  --accent-glow: hsl(var(--hue) 100% 50% / 0.55);
-
+  --hue: 4;
+  --accent: hsl(var(--hue) 77% 48%);
+  --accent-glow: hsl(var(--hue) 77% 48% / 0.55);
+  --on-accent: #ffffff;
   --bg: #1f242d;
   --bg-alt: #323946;
   --text: #ededed;
