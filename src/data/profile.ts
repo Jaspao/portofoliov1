@@ -7,7 +7,7 @@ export const profile: Profile = {
   rolePrefix: "And I'm a",
   role: "Cybersecurity Student",
   bio: "18 | ♟️ | ⚽ | 💻",
-  photo: "/profile.png",
+  photo: "./public/profile.png",
   cv: "/cv.pdf",
   email: "you@example.com",
   socials: [
