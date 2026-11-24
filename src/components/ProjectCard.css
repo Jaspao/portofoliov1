@@ -14,3 +14,7 @@
 .card__links { display: flex; gap: 1.25rem; font-weight: 500; }
 .card__links a { color: var(--accent); }
 .card__links a:hover { text-decoration: underline; }
+.card__links a:hover {
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 3px;
+}

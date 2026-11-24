@@ -8,10 +8,11 @@
   border: 2px solid var(--accent);
   border-radius: 50%;
   color: var(--accent);
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 .socials a:hover {
-  background: var(--accent);
-  color: var(--on-accent);
-  box-shadow: 0 0 16px var(--accent-glow);
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--on-gold);
+  box-shadow: 0 0 16px var(--gold-glow);
 }
