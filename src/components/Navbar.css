@@ -6,7 +6,7 @@
   backdrop-filter: blur(8px);
   z-index: 10;
 }
-.nav__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.nav__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; position: relative}
 .nav__brand { font-size: 1.1rem; line-height: 1.15;font-weight: 700; white-space: pre-line;}
 .nav__links { display: flex; gap: 2.5rem; list-style: none; }
 .nav__links a {
@@ -26,22 +26,52 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
-
-@media (max-width: 720px) {
-  .nav__toggle { display: block; }
-
-  .nav__menu {
-    position: absolute;
-    top: var(--header-h);
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s;
-  }
-  .nav__menu.is-open { max-height: 400px; }
-
-  .nav__links { flex-direction: column; gap: 0; padding: 0.5rem 1.5rem 1.5rem; }
-  .nav__links a { display: block; padding: 0.75rem 0; }
+/* the menu button, now visible on every screen */
+.nav__toggle {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
 }
+.nav__toggle:hover { background: var(--accent); color: var(--on-accent); }
+
+/* the dropdown panel, hidden until .is-open is added */
+.nav__menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 220px;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.18);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+.nav__menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* the links inside it, stacked vertically */
+.nav__links { display: flex; flex-direction: column; list-style: none; padding: 0.5rem; }
+.nav__links a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+.nav__links a:hover { background: var(--gold); color: var(--on-gold); }
+.nav__links a.is-active { color: var(--accent); font-weight: 600; }
+.nav__links a.is-active:hover { color: var(--on-gold); }

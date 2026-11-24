@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import "./Navbar.css";
+
 
 interface NavLink {
   id: string;
@@ -15,9 +16,25 @@ interface NavbarProps {
 
 export default function Navbar({ brand, links, active }: NavbarProps) {
   const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLElement>(null);
 
-  return (
-    <header className="nav">
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    const onClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onClick);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onClick);
+    };
+  }, [open]);
+    return (
+    <header className="nav" ref={ref}>
       <div className="container nav__inner">
         <a href="#home" className="nav__brand">{brand}</a>
 
