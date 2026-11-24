@@ -1,5 +1,5 @@
 import type { AnchorHTMLAttributes, ReactNode } from "react";
-import "./Button.css";
+import "./button.css";
 
 type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
