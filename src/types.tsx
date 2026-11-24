@@ -17,4 +17,5 @@ export interface Profile {
   cv: string;
   email: string;
   socials: Social[];
+  about: string[];
 }

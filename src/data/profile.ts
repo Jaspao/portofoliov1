@@ -15,4 +15,8 @@ export const profile: Profile = {
     { label: "LinkedIn", href: "https://linkedin.com/in/your-username", icon: "linkedin" },
     { label: "Instagram", href: "https://instagram.com/your-username", icon: "instagram" },
   ],
+  about: [
+    "Cybersecurity Student @ APU",
+    "Python ● C++ ● [Coming Soon]",
+  ],
 };
