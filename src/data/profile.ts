@@ -2,11 +2,11 @@ import type { Profile } from "../types";
 
 export const profile: Profile = {
   brand: "Portfolio.",
-  greeting: "Hello, It's Me",
-  name: "Your Name",
+  greeting: "Hello, I'm",
+  name: "Jason Sebastian",
   rolePrefix: "And I'm a",
-  role: "Frontend Developer",
-  bio: "Write two sentences about what you build and what you care about.",
+  role: "Pro Larper",
+  bio: "trigus trigus trigus",
   photo: "/profile.jpg",
   cv: "/cv.pdf",
   email: "you@example.com",

@@ -1,6 +1,6 @@
 :root {
   /* COLOR: change --hue and the whole accent recolors */
-  --hue: 184;
+  --hue: 270;
   --accent: hsl(var(--hue) 100% 50%);
   --accent-glow: hsl(var(--hue) 100% 50% / 0.55);
 
@@ -19,5 +19,5 @@
   /* PHOTO SIZE AND SHAPE */
   --photo-size: 380px;
   --photo-border: 8px;
-  --photo-shape: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  --photo-shape: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
