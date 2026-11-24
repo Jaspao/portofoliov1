@@ -24,3 +24,12 @@ export interface SkillGroup {
   group: string;
   items: string[];
 }
+
+export interface Project {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  live?: string;
+  repo?: string;
+}

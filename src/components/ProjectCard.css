@@ -1,0 +1,16 @@
+.card {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 0 24px var(--accent-glow); }
+.card__img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.card__body { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.card__body p { color: var(--text-muted); font-size: 0.95rem; }
+.card__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; }
+.card__tags li { font-size: 0.75rem; color: var(--accent); }
+.card__tags li::before { content: "#"; }
+.card__links { display: flex; gap: 1.25rem; font-weight: 500; }
+.card__links a { color: var(--accent); }
+.card__links a:hover { text-decoration: underline; }
