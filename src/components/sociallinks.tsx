@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedinIn, FaInstagram, FaXTwitter } from "react-icons/fa6
 import type { Social, SocialIcon } from "../types";
 import "./sociallinks.css";
 
-
 const icons: Record<SocialIcon, IconType> = {
   github: FaGithub,
   linkedin: FaLinkedinIn,
