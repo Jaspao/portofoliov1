@@ -4,11 +4,10 @@
   --accent: hsl(var(--hue) 77% 48%);
   --accent-glow: hsl(var(--hue) 77% 48% / 0.55);
   --on-accent: #ffffff;
-  --bg: #1f242d;
-  --bg-alt: #323946;
-  --text: #ededed;
-  --text-muted: #b4bac4;
-  --on-accent: #1f242d;
+  --bg: #ffffff;
+  --bg-alt: #f3f3f3;
+  --text: #1a1a1a;
+  --text-muted: #5c5c5c;
 
   /* TYPE AND LAYOUT */
   --font: "Poppins", sans-serif;

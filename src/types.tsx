@@ -19,3 +19,8 @@ export interface Profile {
   socials: Social[];
   about: string[];
 }
+
+export interface SkillGroup {
+  group: string;
+  items: string[];
+}

@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import Hero from "../sections/Hero";
 import About from "./About";
+import Skills from "../sections/Skills"
 export interface Section {
   id: string;
   label: string;
@@ -10,4 +11,5 @@ export interface Section {
 export const sections: Section[] = [
   { id: "home", label: "Home", Component: Hero },
   { id: "about", label: "About", Component: About },
+  { id: "skills", label: "Skills", Component: Skills },
 ];
