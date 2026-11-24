@@ -23,4 +23,10 @@
   --gold: #ffc400;
   --gold-glow: rgb(251 225 34 / 0.5);
   --on-gold: #1a1a1a;
+
+  --hero-image: url("background1.jpg");
+  --hero-overlay: rgba(255, 255, 255, 0.6);  
+
+  --about-image: url("background2.jpg");
+  --about-overlay: rgba(255, 255, 255, 0.6); 
 }

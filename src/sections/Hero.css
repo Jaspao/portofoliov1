@@ -34,3 +34,12 @@
   .hero__photo { order: -1; }
   .hero__frame { width: min(var(--photo-size), 80vw); }
 }
+
+#home {
+  background-image:
+    linear-gradient(var(--hero-overlay), var(--hero-overlay)),  /* top layer: the color */
+    var(--hero-image);                                          /* bottom layer: the photo */
+  background-size: cover;       /* fill the section, crop the extra */
+  background-position: center;  /* which part of the photo stays visible */
+  background-repeat: no-repeat;
+}

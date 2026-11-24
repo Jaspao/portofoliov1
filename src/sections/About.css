@@ -1,1 +1,10 @@
 .about p { color: var(--text-muted); max-width: 65ch; margin-bottom: 1rem; }
+
+#about {
+  background-image:
+    linear-gradient(var(--about-overlay), var(--about-overlay)),  /* top layer: the color */
+    var(--about-image);                                          /* bottom layer: the photo */
+  background-size: cover;       /* fill the section, crop the extra */
+  background-position: center;  /* which part of the photo stays visible */
+  background-repeat: no-repeat;
+}
